@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database Management</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>                                            
+<body>
+   
+    <h1 style="text-align: center">STUDENT DATABASE MANAGEMENT</h1>
+    <fieldset>
+         <legend>
+        <h2>Form</h2>
+        </legend>
+        <form id="form">
+           
+        <input type="text" id="regno" name="regno" placeholder="Registration Number"><br><br> 
+        <input type="text" id="fname" name="fname" placeholder="First Name"> <br> <br>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"> <br> <br>
+        <input type="date" id="dob" name="dob" placeholder="DOB"> <br> <br>
+        <input type="email" id="email" name="email" placeholder="Email"> <br> <br>
+        <input type="text" id="dept" name="dept" placeholder="Department"> <br> <br>
+        <input type="number" id="year" name="year" placeholder="Year of Graduation"> <br> <br>
+    <input type="button"  value="Submit" id="btn" onclick="Submit()">
+    <input type="reset" value="Reset" id="btn">
+        </form>
+    </fieldset>
+    <br><div id="msg"></div><br>
+    <fieldset>
+        <legend>
+            <h2>Data from Local Storage</h2>
+        </legend>
+        <table border="2" id="table">
+            <tr>
+                <td class="col">Registration Number</td>
+                <td class="col">First Name</td>
+                <td class="col">Last Name</td>
+                <td class="col">DOB</td>
+                <td class="col">Email</td>
+                <td class="col">Department</td>
+                <td class="col">Year of Graduation</td>
+                <td class="col">Action</td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+<script src="script.js"></script>
+</html>
